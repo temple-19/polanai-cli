@@ -23,18 +23,19 @@ const handleSubmit = (event) => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': 'https://gleeful-tulumba-524329.netlify.app',
     },
+    mode: 'no-cors', // Use 'no-cors' mode
     body: JSON.stringify({ message }),
   })
-    .then((res) => res.json())
+    .then((res) => res.text()) // Use res.text() instead of res.json()
     .then((data) => {
-      setResponse(data.message);
+      setResponse(data); // Set the response directly, as res.json() won't work with 'no-cors' mode
     })
     .catch((error) => {
       console.error('Error:', error);
     });
 };
+
 
 
 
