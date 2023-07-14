@@ -45,7 +45,6 @@ const CreatePage = () => {
         <h1> Generate Your Tv Commercial Script </h1>
         <form onSubmit={handleSubmit}>
            <textarea
-            placeholder="write your suggestions, premise, characters and setting of your desired short commercial"
             value={message}
             onChange={handleMessageChange}
           />
