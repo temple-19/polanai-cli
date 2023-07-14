@@ -44,7 +44,11 @@ const CreatePage = () => {
       <div className="my-app">
         <h1> Generate Your Tv Commercial Script </h1>
         <form onSubmit={handleSubmit}>
-          <textarea placeholder="write your suggestions, premise, characters and setting of your desired short commercial" value={message} onChange={handleMessageChange} />
+           <textarea
+            placeholder="write your suggestions, premise, characters and setting of your desired short commercial"
+            value={message}
+            onChange={handleMessageChange}
+          />
           <button type="submit">Send Message</button>
         </form>
         <div className="response-container">
