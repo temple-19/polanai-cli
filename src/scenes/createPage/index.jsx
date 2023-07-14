@@ -24,7 +24,6 @@ const handleSubmit = (event) => {
     headers: {
       'Content-Type': 'application/json',
     },
-    mode: 'no-cors', // Use 'no-cors' mode
     body: JSON.stringify({ message }),
   })
     .then((res) => res.text()) // Use res.text() instead of res.json()
