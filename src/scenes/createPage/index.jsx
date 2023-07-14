@@ -17,12 +17,13 @@ const CreatePage = () => {
     setMessage(event.target.value);
   };
 
- const handleSubmit = (event) => {
+const handleSubmit = (event) => {
   event.preventDefault();
   fetch('https://polani-api.onrender.com/create', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': 'https://gleeful-tulumba-524329.netlify.app',
     },
     body: JSON.stringify({ message }),
   })
@@ -34,6 +35,7 @@ const CreatePage = () => {
       console.error('Error:', error);
     });
 };
+
 
 
   return (
