@@ -1,6 +1,3 @@
-/* Add your CSS styles here */
-
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -248,6 +245,26 @@
     padding-left: 10px;
     font-size: 14px;
   }
+
+  /* Updated styles for "bring-advert-to-life-section" on mobile */
+  .bring-advert-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bring-advert-image {
+    margin-right: 0;
+  }
+
+  .bring-advert-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bring-advert-text {
+    margin-top: 20px;
+  }
 }
 
 /* Laptop Styles */
@@ -269,21 +286,4 @@
   .home-btn {
     font-size: 16px;
   }
-}
-.bring-advert-content {
-  display: flex;
-  align-items: center;
-}
-
-.bring-advert-image {
-  flex: 0 0 auto;
-  margin-right: 20px;
-}
-
-.bring-advert-image img {
-  max-width: 500px;
-}
-
-.bring-advert-text {
-  flex: 1 1 auto;
 }
