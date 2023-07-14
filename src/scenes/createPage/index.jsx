@@ -24,7 +24,6 @@ const CreatePage = () => {
     headers: {
       'Content-Type': 'application/json',
     },
-    mode: 'cors', // Include CORS mode option
     body: JSON.stringify({ message }),
   })
     .then((res) => res.json())
