@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './inde.css';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setLogout } from 'state';
 import { Link } from 'react-router-dom';
 
@@ -8,6 +8,7 @@ const CreatePage = () => {
   const [message, setMessage] = useState('');
   const [response, setResponse] = useState('');
   const dispatch = useDispatch();
+  const token = useSelector((state) => state.token);
 
   const handleLogout = () => {
     dispatch(setLogout());
@@ -23,6 +24,7 @@ const CreatePage = () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`,
       },
       body: JSON.stringify({ message }),
     })
