@@ -1,3 +1,29 @@
+/* Add your CSS styles here */
+/* Example styles for the navbar, home section, features section, and contact section */
+/* header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+} */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -22,7 +48,7 @@
   background-size: cover;
   background-position: center;
   filter: blur(5px);
-  opacity: 0.2;
+  opacity: 2;
 }
 
 .home-section .container {
@@ -40,16 +66,14 @@
   padding-left: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-
 .bring-advert-image img {
-  border-radius: 10px;
+  border-radius: 10px; /* Add curved corners to the image */
 }
 
 .bring-advert-to-life-section {
-  background-color: rgb(36, 34, 34);
+  background-color: rgb(36, 34, 34); /* Set the section background to grey */
   color: white;
 }
-
 .home-section p {
   color: white;
   font-size: 42px;
@@ -125,29 +149,9 @@
   font-size: 16px;
 }
 
-.bring-advert-content {
-  display: flex;
-  align-items: center;
-}
+/* Media Queries for Responsive Design */
 
-.bring-advert-image {
-  flex: 0 0 auto;
-  margin-right: 20px;
-}
-
-.bring-advert-image img {
-  max-width: 100%;
-}
-
-.bring-advert-text {
-  flex: 1 1 auto;
-  text-align: center;
-}
-
-.bring-advert-to-life-section {
-  overflow: hidden;
-}
-
+/* Tablet Styles */
 @media (max-width: 768px) {
   .container {
     padding: 10px;
@@ -209,6 +213,7 @@
   }
 }
 
+/* Mobile Styles */
 @media (max-width: 480px) {
   .container {
     padding: 5px;
@@ -268,6 +273,7 @@
   }
 }
 
+/* Laptop Styles */
 @media (min-width: 1024px) {
   .home-section {
     padding: 300px;
@@ -286,4 +292,21 @@
   .home-btn {
     font-size: 16px;
   }
+}
+.bring-advert-content {
+  display: flex;
+  align-items: center;
+}
+
+.bring-advert-image {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.bring-advert-image img {
+  max-width: 500px;
+}
+
+.bring-advert-text {
+  flex: 1 1 auto;
 }
