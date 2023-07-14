@@ -17,26 +17,23 @@ const CreatePage = () => {
     setMessage(event.target.value);
   };
 
-const handleSubmit = (event) => {
-  event.preventDefault();
-  fetch('https://polani-api.onrender.com/create', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ message }),
-  })
-    .then((res) => res.text()) // Use res.text() instead of res.json()
-    .then((data) => {
-      setResponse(data); // Set the response directly, as res.json() won't work with 'no-cors' mode
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    fetch('/create', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ message }),
     })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
-};
-
-
-
+      .then((res) => res.json())
+      .then((data) => {
+        setResponse(data.message);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  };
 
   return (
     <div>
