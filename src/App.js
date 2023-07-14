@@ -23,9 +23,9 @@ function App() {
             <Route
               path="/"
               element={
-                <UnprotectedRoute>
+                
                   <HomePage />
-                </UnprotectedRoute>
+               
               }
             />
             <Route
