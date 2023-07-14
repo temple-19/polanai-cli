@@ -19,7 +19,7 @@ const CreatePage = () => {
 
 const handleSubmit = (event) => {
   event.preventDefault();
-  fetch('https://polani-api.onrender.com/create', {
+  fetch('https://polani-api.onrender.com/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
