@@ -97,7 +97,7 @@ const Form = () => {
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      handleSubmit(event);
+      handleFormSubmit(event);
     }
   };
 
