@@ -95,6 +95,12 @@ const Form = () => {
     if (isRegister) await register(values, onSubmitProps);
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleSubmit(event);
+    }
+  };
+
   return (
     <Formik
       onSubmit={handleFormSubmit}
