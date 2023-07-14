@@ -21,7 +21,7 @@
   background-image: url('../../../public/homepic.png');
   background-size: cover;
   background-position: center;
-  filter: blur(5px);
+  filter: blur(3px);
   opacity: 2;
 }
 
@@ -304,6 +304,16 @@
   }
 
   .bring-advert-image {
+    flex: 0 0 30%; /* Adjust the size of the image container */
     margin-right: 20px;
+  }
+
+  .bring-advert-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bring-advert-text {
+    flex: 1 1 auto;
   }
 }
