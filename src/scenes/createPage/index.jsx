@@ -17,23 +17,25 @@ const CreatePage = () => {
     setMessage(event.target.value);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    fetch('https://polani-api.onrender.com/create', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ message }),
+ const handleSubmit = (event) => {
+  event.preventDefault();
+  fetch('https://polani-api.onrender.com/create', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    mode: 'cors', // Include CORS mode option
+    body: JSON.stringify({ message }),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      setResponse(data.message);
     })
-      .then((res) => res.json())
-      .then((data) => {
-        setResponse(data.message);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-  };
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+};
+
 
   return (
     <div>
