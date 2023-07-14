@@ -23,7 +23,6 @@ const CreatePage = () => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Origin': 'https://gleeful-tulumba-524329.netlify.app',
     },
     mode: 'cors', // Include CORS mode option
     body: JSON.stringify({ message }),
