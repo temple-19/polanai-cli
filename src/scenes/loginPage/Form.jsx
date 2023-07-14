@@ -48,7 +48,7 @@ const Form = () => {
 
   const register = async (values, onSubmitProps) => {
     const savedUserResponse = await fetch(
-      '/auth/register',
+      'https://polani-api.onrender.com/auth/register',
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -65,7 +65,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     try {
-      const loggedInResponse = await fetch('/auth/login', {
+      const loggedInResponse = await fetch('https://polani-api.onrender.com/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(values),
