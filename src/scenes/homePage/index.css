@@ -43,7 +43,7 @@
 
 .bring-advert-image img {
   border-radius: 10px; /* Add curved corners to the image */
-  max-width: 100%; /* Make the image responsive and adapt to the container width */
+  max-width: 35%; /* Make the image responsive and adapt to the container width */
   height: auto;
 }
 
