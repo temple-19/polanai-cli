@@ -226,8 +226,9 @@ nav ul li a {
     padding: 5px;
   }
 
-  .home-section {
-    padding: 100px;
+ .home-section {
+    padding: 250px;
+    margin-bottom: 20px;
   }
 
   .home-section h1 {
