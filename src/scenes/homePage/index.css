@@ -66,6 +66,10 @@ nav ul li a {
   padding-left: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
+.features-section {
+  background-color: #E5F4FF;
+}
 .bring-advert-image img {
   border-radius: 10px; /* Add curved corners to the image */
 }
