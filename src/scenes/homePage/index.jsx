@@ -8,7 +8,7 @@ const HomePage = () => {
         <div className="container">
           <h1>POLAN AI</h1>
           <p>
-            AI-powered TV commercial adverts scripts.
+            AI-Powered TV advert scripts.
           </p>
           <div className="home-btn-container">
             <a href="/login">
