@@ -28,6 +28,7 @@ nav ul li a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #E5F4FF;
 }
 
 .home-section {
@@ -67,9 +68,6 @@ nav ul li a {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.features-section {
-  background-color: #E5F4FF;
-}
 .bring-advert-image img {
   border-radius: 10px; /* Add curved corners to the image */
 }
